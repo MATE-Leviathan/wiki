@@ -1,14 +1,18 @@
 ## **Current Progress Towards ROS2**
 
 ## Development Enviorment
-    - Currently pretty well set up for local development
-    - Docker container + setup for ROS2
-    - Able to build code within container
+- Currently pretty well set up for local development
+- Docker container + setup for ROS2
+- Able to build code within container
+- Waiting on Jetson Orin Nano DevKit for hardware testing and install
 
 
 ## Camera integration
-    - Almost done, can programtically access camera stream in code
-    - Node is close to being able to publish ros camera messages
+- Done, node reads camera and publishes images
+- Inital benchmarks show about 15fps, could be fast enough but might not be
+
+## Sonar integration
+- Not started, need to get sensor and play with it
 
 ## Motor Control
-    - Still work in progress
+- Still work in progress, need hardware and Arduino MEGA to start wiring and playing with it
