@@ -1,4 +1,4 @@
-# The ZebraWiki
+# MATE Docs
 A collection of various wiki files, mainly related to programming.
 
 ## Table of Contents:
