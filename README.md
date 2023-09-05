@@ -2,7 +2,8 @@
 A collection of various wiki files, mainly related to programming.
 
 ## Table of Contents:
-- [Current Progress](dev/progress.md)
+- ### [Current Progress](dev/progress.md)
+    - How programming progress is coming along, current challenges and things to work on 
 - ### [Linux Stuff](linux/linux.md)
     - [Linux Filesystem](linux/filesystem.md)
     - [Text Editing/Programming](linux/editing.md)
