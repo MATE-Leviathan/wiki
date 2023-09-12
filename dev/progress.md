@@ -12,7 +12,7 @@
 - Inital benchmarks show about 15fps, could be fast enough but might not be
 
 ## Sonar integration
-- Not started, need to get sensor and play with it
+- Done `ping2_sonar`
 
 ## Motor Control
 - Still work in progress, need hardware and Arduino MEGA to start wiring and playing with it
