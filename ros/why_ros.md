@@ -9,7 +9,7 @@
 - ROS allows saving of all messages passing between nodes. This allows us to debug exactly what happened during a match, or even replay the data after fixing code to verify the fix.
 - ROS has a huge library of robotics-related packages. Since they use standard interfaces to communicate we can easily adapt them to our robot as needed.
 
-### Marshall's distilled bullet points:
+### Distilled bullet points:
 - ROS is an industry standard framework with widespread adoption and vendor support for emerging sensor technolog which means we can focus on higher order problem solving instead of reinventing solutions that already exist.
 - ROS provides a decentralized framework that supports multi-nodal topologies which enable seamless transparent communication between processors on our robots.
 - The design principles and well-defined interfaces of ROS enable our large software development team to work individually while maintaining clear communication among disparate nodes.
