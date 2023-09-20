@@ -11,13 +11,13 @@
     - if you're curious, `alias hwlaunch='roslaunch controller_node 2023_compbot_combined.launch'`
 - **Usage**: `hwlaunch` after you've sourced ROS with `rosjet`
 
-### [`rosrun`](#rosrun)
+### [`ros2 run`](#ros2_run)
 - **Description**: runs a ROS node
-- **Usage**: `rosrun [package] [node]`
+- **Usage**: `ros2 run [package] [node]`
     - This runs the ROS node `[node]` in package `[package]`.
 - **Example**:
     ```bash
-    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ rosrun rviz rviz # runs rviz (which is in a package of the same name), the ROS visualization tool
+    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ ros2 run rviz2 rviz2 # runs rviz (which is in a package of the same name), the ROS visualization tool
     QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ubuntu'
     [INFO] [1693006625.121936170]: rviz version 1.14.20
     [INFO] [1693006625.122026138]: compiled against Qt version 5.15.3
@@ -28,7 +28,7 @@
     [INFO] [1693006625.606338795]: OpenGl version: 4.6 (GLSL 4.6) limited to GLSL 1.4 on Mesa system.
     ```
 
-### [`roslaunch`](#roslaunch)
+### [`ros2 launch`](#ros2_launch)
 - **Description**: runs a ROS node
 - **Usage**: `roslaunch [package] [file.launch]`
     - This runs the launch file `[file.launch]` in package `[package]`.
@@ -39,25 +39,19 @@
     Checking log directory for disk usage. This may take a while.
     Press Ctrl-C to interrupt
     Done checking log file disk usage. Usage is <1GB.
-
-    started roslaunch server http://192.168.162.15:44361/
-
-    SUMMARY
-    ========
-    ... lots more text ...
     ```
 
-### [`rostopic`](#rostopic)
+### [`ros2 topic`](#rostopic)
 - **Description**: topic-related ROS commands
 - **Usage**:
-    - `rostopic list`: lists all topics being published to
-    - `rostopic echo [topic]`: prints out all messages being published to `[topic]`
-    - `rostopic info [topic]`: prints out information about a topic
-    - `rostopic pub [topic] [message type] [message]`: publishes `[message]` (of type `[messgae type]`) to `[topic]`
-    - `rostopic hz [topic]`: calculates the publish rate (in <ins>Hz</ins>) of `[topic]`
+    - `ros2 topic list`: lists all topics being published to
+    - `ros2 topic echo [topic]`: prints out all messages being published to `[topic]`
+    - `ros2 topic info [topic]`: prints out information about a topic
+    - `ros2 topic pub [topic] [message type] [message]`: publishes `[message]` (of type `[messgae type]`) to `[topic]`
+    - `ros2 topic hz [topic]`: calculates the publish rate (in <ins>Hz</ins>) of `[topic]`
 - **Example**:
     ```bash
-    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ rostopic list
+    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ ros2 topic list
     /align/cmd_vel
     /auto/auto_mode
     /auto/cmd_vel
@@ -65,7 +59,7 @@
     ```
 
     ```bash
-    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ rostopic echo /imu/zeroed_imu
+    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ ros2 topic echo /imu/zeroed_imu
     header: 
     seq: 24
     stamp: 
@@ -83,7 +77,7 @@
     ```
 
     ```bash
-    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ rostopic info /auto/auto_mode
+    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ ros2 topic info /auto/auto_mode
     Type: behavior_actions/AutoMode
 
     Publishers: None
@@ -93,7 +87,7 @@
     ```
 
     ```bash
-    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ rostopic pub /auto/auto_mode behavior_actions/AutoMode "header:
+    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ ros2 topic pub /auto/auto_mode behavior_actions/AutoMode "header:
     seq: 0
     stamp:
         secs: 0
@@ -104,16 +98,12 @@
     ```
 
     ```bash
-    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ rostopic hz /imu/zeroed_imu 
+    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ ros2 topic hz /imu/zeroed_imu 
     subscribed to [/imu/zeroed_imu]
     average rate: 35.417
         min: 0.000s max: 0.060s std dev: 0.01774s window: 35
     average rate: 32.292
         min: 0.000s max: 0.060s std dev: 0.01764s window: 63
     ```
-
-### [`roswtf`](#roswtf)
-- **Description**: a ROS self-test tool, checks for errors
-- **Usage**: `roswtf`
 
 [Home](/README.md)
