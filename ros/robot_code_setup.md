@@ -17,10 +17,10 @@
 
 ### [**Clone robot code**](#clone-robot-code)
 - `cd ~`
-- `git clone git@github.com:FRC900/2023RobotCode.git`
+- `git clone git@github.com:MATE-Leviathan/2023WaterCode.git`
 
 ### [**Set up Docker container**](#set-up-docker-container)
-- `cd ~/2023RobotCode/docker`
+- `cd ~/2023WaterCode/docker`
 - `./docker-run`
 - Wait for things to download
 
@@ -29,12 +29,6 @@ The general Docker reference is [here](/tools/docker.md).
 - `docker ps -a`, find the name of your container
 - `docker start [container name]`
 - `docker exec -it [container name] /bin/bash`
-
-### [**Set up submodules/.rosinstall**](#set-up-submodulesrosinstall)
-**Inside Docker:**
-- `cd 2023RobotCode/zebROS_ws`
-- `git submodule init --update`
-- `wstool update -t src`
 
 ### [**Build code**](#build-code)
 - `natbuild`, this will take a while
