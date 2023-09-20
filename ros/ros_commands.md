@@ -1,27 +1,15 @@
 ## **ROS-Related Commands**
 
-### [`rosstd`, `rosjet`](#rosstd-rosjet)
+### [`rosstd`](#rosstd)
 - **Description**: aliases to set up/source ROS environment
 - **Usage**:
     - `rosstd` is for running robot code on your laptop
-    - `rosjet` is for running robot code on the robot/Jetson
 
 ### [`hwlaunch`](#hwlaunch)
+- ### TO BE IMPLMENTED
 - **Description**: alias to run robot code (to be executed on the Jetson)
     - if you're curious, `alias hwlaunch='roslaunch controller_node 2023_compbot_combined.launch'`
 - **Usage**: `hwlaunch` after you've sourced ROS with `rosjet`
-
-### [`roscore`](#roscore)
-- **Description**: the ROS core process/master, this is what coordinates communication between nodes
-- **Usage**: `roscore -p 5802 &`
-    - FRC teams are restricted to network ports `5800` to `5810`, and the default ROS port is `11311` which is out of that range. That's why we use port `5802`.
-    - The `&` at the end runs the process in the background (so you can do other things in your terminal)
-- **Example**:
-    ```bash
-    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ roscore -p 5802 &
-    [1] 50905
-    ... lots of debug messages ...
-    ```
 
 ### [`rosrun`](#rosrun)
 - **Description**: runs a ROS node
