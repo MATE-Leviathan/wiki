@@ -1,5 +1,15 @@
 ## **Robot Code Setup**
 
+### [**Install Ubuntu**](#install-ubuntu)
+#### [**Windows**](#windows)
+- Install [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+- Should basically just be `wsl --install`
+- Use `wsl` to open a terminal
+
+#### [**Mac**](#mac)
+- Install docker desktop from [here](https://docs.docker.com/docker-for-mac/install/)
+- Build the docker container (see below at [**Set up Docker container**](#set-up-docker-container))
+
 ### [**Install Docker**](#install-docker)
 - `sudo apt update`
 - `sudo apt install docker.io`
@@ -21,6 +31,7 @@
 
 ### [**Set up Docker container**](#set-up-docker-container)
 - `cd ~/2023WaterCode/docker`
+- `docker build -t mate2023 .`
 - `./docker-run`
 - Wait for things to download
 
