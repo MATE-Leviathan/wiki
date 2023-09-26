@@ -19,6 +19,8 @@
 - Have testing setup but have yet to have succesfull control of motors, potential bad motor
 - Need to follow troubleshooting steps [here](https://bluerobotics.com/learn/thruster-usage-guide/#troubleshooting) to see if it is a hardware issue or not
 - Also looking at PWM breakout board to hopefully not have to run PWM through another board
+- PWM breakout board arrived, allows us to go i2c->PWM
+  - 
 
 ## Controller Integration
 - Everett is on this one, going to use `joy` package for ROS2
