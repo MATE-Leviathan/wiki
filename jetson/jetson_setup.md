@@ -10,6 +10,5 @@ The current Orin has the IP 10.50.2.100 and can be accessed with
 `ssh ubuntu@10.50.2.100`. 
 
 ## Software install
-- Set up static ip with IT (still in progress)
-- ROS2 from source (see below)
+- ROS2 from source (we are actually just gonna wait for jetpack 6 with a mid nov release)
 
