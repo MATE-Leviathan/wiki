@@ -23,6 +23,7 @@
 - PWM breakout board arrived (https://www.adafruit.com/product/5690), allows us to go i2c->PWM 
 - ~~After trying the first board we got and it didn't work, we have now purchased https://www.adafruit.com/product/815 and it works for led control and presumably motor control soon~~
 - Can drive all 6 thrusters from 25A power supply! Video in images folder
+- Wiring is currenlty super simple and not great, just power some terminal blocks and then connect with alligator clips
 
 ## IMU Integration
 - Worked first try using (https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/overview)! 
