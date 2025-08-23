@@ -10,6 +10,9 @@
 - Install docker desktop from [here](https://docs.docker.com/docker-for-mac/install/)
 - Build the docker container (see below at [**Set up Docker container**](#set-up-docker-container))
 
+#### [**Native Linux**](#native)
+- Just follow the steps below, you should be able to figure it out :) 
+
 ### [**Install Docker**](#install-docker)
 - `sudo apt update`
 - `sudo apt install docker.io`
@@ -30,10 +33,12 @@
 - `git clone git@github.com:MATE-Leviathan/24-25WaterCode.git`
 
 ### [**Set up Docker container**](#set-up-docker-container)
-- `cd ~/2023WaterCode/docker`
-- `docker build -t mate2023 .`
-- `./docker-run`
+- `cd ~/24-25WaterCode/docker`
+- `docker build -t mate2025 .`
 - Wait for things to download
+- `./docker-run`
+- `cd 24-25WaterCode` and `ls` and you should see stuff, if not you probably didn't clone the repo into /home/ubuntu 
+
 
 ### [**How to enter Docker**](#how-to-enter-docker)
 The general Docker reference is [here](/tools/docker.md).
@@ -42,4 +47,4 @@ The general Docker reference is [here](/tools/docker.md).
 - `docker exec -it [container name] /bin/bash`
 
 ### [**Build code**](#build-code)
-- `natbuild`, this will take a while
+- `natbuild`, then `rosstd`, then try ros2 and tab complete your way into some commands. See here for some things to try https://docs.ros.org/en/rolling/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html
