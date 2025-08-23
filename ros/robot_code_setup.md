@@ -27,7 +27,7 @@
 
 ### [**Clone robot code**](#clone-robot-code)
 - `cd ~`
-- `git clone git@github.com:MATE-Leviathan/2023WaterCode.git`
+- `git clone git@github.com:MATE-Leviathan/24-25WaterCode.git`
 
 ### [**Set up Docker container**](#set-up-docker-container)
 - `cd ~/2023WaterCode/docker`
