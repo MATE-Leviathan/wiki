@@ -1,5 +1,8 @@
 # UE5 Development Guide
 
+## Install for Linux
+We want Unreal 5.3, go to here https://www.unrealengine.com/en-US/linux and find the 20GB, ```Linux_Unreal_Engine_5.3.zip```
+
 ## Critical Warning
 
 **Always close Unreal Engine before running the live testing script.** Running the script while UE is open will crash the editor and may result in lost progress.
