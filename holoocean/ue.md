@@ -1,7 +1,7 @@
 # UE5 Development Guide
 
 ## Install for Linux
-We want Unreal 5.3, go to here https://www.unrealengine.com/en-US/linux and find the 20GB, ```Linux_Unreal_Engine_5.3.zip```
+We want Unreal 5.3.2, go to here https://www.unrealengine.com/en-US/linux and find the 20GB, ```Linux_Unreal_Engine_5.3.zip```
 
 ## Critical Warning
 
