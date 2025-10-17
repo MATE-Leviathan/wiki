@@ -8,6 +8,7 @@ We want Unreal 5.3, go to here https://www.unrealengine.com/en-US/linux and find
 **Always close Unreal Engine before running the live testing script.** Running the script while UE is open will crash the editor and may result in lost progress.
 
 ## Documentation
+**Run UE Version 5.3.2 specifically**
 
 Comprehensive documentation is available at:
 https://byu-holoocean.github.io/holoocean-docs/v2.0.1/develop/env.html
