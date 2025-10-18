@@ -32,6 +32,19 @@
 - `cd ~`
 - `git clone git@github.com:MATE-Leviathan/24-25WaterCode.git`
 
+## Set up Docker container - Using `docker-compose`
+
+### Set up Docker container
+- `cd ~/24-25WaterCode/docker`
+- `docker compose up -d`
+- Wait for download to finish
+
+### How to enter Docker
+- `docker start leviathan`
+- `docker exec -it leviathan /bin/bash`
+
+## Set up Docker container - Using `docker-run.sh`
+
 ### [**Set up Docker container**](#set-up-docker-container)
 - `cd ~/24-25WaterCode/docker`
 - `docker build -t mate2025 .`
