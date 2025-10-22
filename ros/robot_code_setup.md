@@ -36,12 +36,15 @@
 
 ### Set up Docker container
 - `cd ~/24-25WaterCode/docker`
-- `docker compose up -d`
+- `./setup.sh`
 - Wait for download to finish
 
-### How to enter Docker
-- `docker start leviathan`
-- `docker exec -it leviathan /bin/bash`
+### Enter the Docker container
+- Make sure the container is running (`docker ps -a`), else run `./setup.sh` again.
+- `./enter.sh`
+
+### Remove the Docker container
+- `./stop.sh`
 
 ## Set up Docker container - Using `docker-run.sh`
 

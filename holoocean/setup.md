@@ -11,15 +11,20 @@
 ## Install
 
 1. Go to 24-25WaterCode/docker
-2. Do you have and Nvidia GPU?
-    - On Nvidia: Run `docker compose --profile holoocean up -d --build`
-    - On non-Nvidia: Run `docker compose --profile holoocean-no-nvidia up -d --build`
+2. Do you have an Nvidia GPU?
+    - On Nvidia: Run `./setup.sh -H`
+    - On non-Nvidia: Run `./setup.sh -N`
 
 ## Run Container
 
-1. Run `docker exec -it holoocean-ros bash`
+1. Make sure the container is running (`docker ps -a`), else run `./setup.sh` again.
+2. Run `./enter.sh -H`
 
-**Note**: `colcon build` takes a minute to run, so you may need to run `source ros2_ws/install/setup.bash`
+**Note**: `colcon build` takes a minute to run, so you may need to run `source ros2_ws/install/setup.bash` once you are in the container.
+
+## Remove Container
+
+1. Run `./stop.sh`
 
 ## Run HoloOcean
 
