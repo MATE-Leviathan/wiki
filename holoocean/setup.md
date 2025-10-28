@@ -12,7 +12,8 @@
 
 1. Go to 24-25WaterCode/docker
 2. Do you have an Nvidia GPU?
-    - On Nvidia: Run `./setup.sh -H`
+    - On Nvidia: Install the Nvidia Container toolkit as described in [their docs](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
+    - Run `./setup.sh -H`
     - On non-Nvidia: Run `./setup.sh -N`
 
 ## Run Container
